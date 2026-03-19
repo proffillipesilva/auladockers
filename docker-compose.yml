@@ -1,0 +1,9 @@
+services:
+  db:
+    image: mysql:latest
+    container_name: mysql-fiec
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: fiec2026
+    ports:
+      - "38030:3306"
